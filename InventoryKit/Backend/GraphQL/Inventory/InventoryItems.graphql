@@ -1,0 +1,12 @@
+query InventoryItems($fromId: UUIDV4, $count: Int!) {
+  items(start: $fromId, next: $count) {
+    id,
+    name,
+    description,
+    story,
+    photo,
+    votes,
+    votedOnIt,
+    category
+  }
+}

@@ -1,0 +1,3 @@
+mutation DeleteInventoryItem($id: UUIDV4!) {
+  deleteItem(id: $id)
+}

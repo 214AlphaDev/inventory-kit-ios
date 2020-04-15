@@ -1,0 +1,15 @@
+mutation VoteForInventoryItem($id: UUIDV4!) {
+  vote(id: $id) {
+    item {
+      id,
+      name,
+      description,
+      story,
+      photo,
+      votes,
+      votedOnIt,
+      category
+    },
+    error
+  }
+}

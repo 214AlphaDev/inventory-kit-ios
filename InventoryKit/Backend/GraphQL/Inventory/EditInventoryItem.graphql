@@ -1,0 +1,15 @@
+mutation EditInventoryItem($id: UUIDV4!, $name: ItemName!, $description: ItemDescription!, $story: ItemStory, $photo: Base64ItemPhoto, $category: Category!) {
+  updateItem(input: { item: $id, name: $name, description: $description, story: $story, photo: $photo, category: $category }) {
+    item {
+      id,
+      name,
+      description,
+      story,
+      photo,
+      votes,
+      votedOnIt,
+      category
+    },
+    error
+  }
+}

@@ -1,0 +1,15 @@
+mutation WithdrawVoteFromInventoryItem($id: UUIDV4!) {
+  withdrawVote(id: $id) {
+    item {
+      id,
+      name,
+      description,
+      story,
+      photo,
+      votes,
+      votedOnIt,
+      category
+    },
+    error
+  }
+}
